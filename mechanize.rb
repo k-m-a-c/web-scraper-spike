@@ -15,8 +15,8 @@ profile_details = doctor_profile.search('div#profile-content')
 
 doctor_info_file = "doctor-" + cspo_number + '.xml'
 
-file = Nokogiri::XML(File.open(doctor_info_file, 'w') do |f|
-  f.write(profile_details))
+file = Nokogiri::XML(File.open(doctor_info_file, 'w')) do |f|
+  f.write(profile_details)
 end
 
 # File.open(doctor_info_file, 'w') do |f|

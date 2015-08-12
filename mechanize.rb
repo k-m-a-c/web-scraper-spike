@@ -22,3 +22,7 @@ end
 # File.open(doctor_info_file, 'w') do |f|
 #   f.write(profile_details)
 # end
+
+# Strategy: Since the CSPO site's markup is so bad, se Nokogiri to
+# interpret the page as XML and select the nodes specific to each piece
+# of needed profile data
